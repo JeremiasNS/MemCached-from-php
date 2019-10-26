@@ -36,6 +36,22 @@
 				$result = "Aguardando instrução...";
 				$color = "#ccc";
 				
+			if($busca_chave==""){
+					$_GET['funcao'] = "limpo";
+					}
+			# Verificando a chamada da função deletar
+				if($_GET['funcao'] == "deletarChave"){
+					if($memcache->get($busca_chave)){
+						$memcache->delete($busca_chave);
+						$result = "Chave deletada!";
+						$color = "#c83838";
+					}
+				# Retornando erro em caso de falha ao gravar a chave
+					else{
+						$result = "Chave não encontrada!";
+						$color = "#c83838";
+						}
+				}
 			
 			?>
              <!-- imprimindo a variavel global $result --> 
