@@ -1,0 +1,135 @@
+<style type="text/css">
+.geral {
+	color:#000;
+	width:100%;
+	height: 100%;
+	margin:auto;
+	
+}
+.imagens{
+	background-color:#fff;
+	width:20%;
+	height:50%;
+	float:left;
+	}
+.imagensItens{
+	border:none;
+	width:100%;
+	height:100%;
+	}
+.log{
+	background-color:#fff;
+	width:80%;
+	height:50%;
+	align-items: center;
+	display: flex;
+	justify-content: left;
+	font-size:12pt;
+	font-family:Verdana, Geneva, sans-serif;
+	
+	}
+.menu{
+	background-color:#2b9a94;
+	width:100%;
+	height:10%;
+	
+	}
+.menuItem{
+	width:auto;
+	height:100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-decoration:none;
+	color:#fff;
+	float:left;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-size:12pt;
+	font-family:Verdana, Geneva, sans-serif;
+	}
+
+.menuItem:hover{
+	color:#c83838;
+}
+
+.corpo{
+	background-color:#fff;
+	width:100%;
+	height:75%;
+	}
+.rodape{
+	background-color:#333;
+	color:#2b9a94;	
+	width:100%;
+	
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-size:12pt;
+	font-family:Verdana, Geneva, sans-serif;
+	}
+.tfModelo{
+	border:ridge;
+	border-color: #2b9a94;
+	border-width:1px;
+	height: 25px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#555;
+	font-size:14px;
+	}
+.tab{
+	color:#2b9a94;
+	
+	}
+.busca{
+	border-style:solid;
+	border-width:thin;
+	border-color:#2b9a94;
+	font-size: 20px;
+	height: 80%;
+	width: 50%;
+	text-align: left;
+	align-items: center;
+}
+.taSaida{
+	border-style:solid;
+	border-width:thin;
+	border-color:#2b9a94;
+	font-size: 14px;
+	text-align:justify;
+	color:#2b9a94;
+	height: 100%;
+	width: 80%;
+	text-align: left;
+	align-items: center;
+	
+}
+.buscaDiv{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 95%;
+	}
+.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #02b9aa;
+	padding: 4px 12px;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #ffffff),
+		to(#b4b4b4));
+	background: linear-gradient(
+		top,
+		#ffffff 0%,
+		#ffffff 50%,
+		#b7b7b7);
+	border-radius: 0px;
+	border: 1px solid #02b9aa;
+}
+
+</style>
+
