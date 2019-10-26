@@ -56,6 +56,37 @@
 				$result = "Aguardando instrução...";
 				$color = "#ccc";
 				
+				if($chave==""){
+					$_GET['funcao'] = "limpo";
+					}
+				
+				if($_GET['funcao'] == "editChave"){
+					if($chave!="" && $valor!=""){
+						if ($opcao=='apos'){
+							if($memcache->get($chave)){
+								$memcache->append($chave,$valor);
+								$result = $memcache->get($chave,$valor);
+								$color = "#02b9aa";
+							}else{
+								$result = "Chave não encontrada!";
+								$color = "#c83838";
+							}
+						}
+						if ($opcao=='antes'){
+							if($memcache->get($chave)){
+								$memcache->prepend($chave,$valor);
+								$result = $memcache->get($chave,$valor);
+								$color = "#02b9aa";
+							}else{
+								$result = "Chave não encontrada!";
+								$color = "#c83838";
+							}
+						}
+					}else{
+						$result = "Preencha todos os campos!";
+						$color = "#c83838";
+						}
+				}
 			?>
         	 <form class = "buscaDiv" id="form1" name="form1" method="post" action="">
             	<label for="taSaida"></label>
